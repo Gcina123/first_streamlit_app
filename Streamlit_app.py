@@ -1,11 +1,8 @@
-import streamlit
-
-streamlit.title('My Parents new Healty Diner')
-
 import streamlit as st
 
 st.title('My Parents New Healthy Diner')
-st.markdown('## Subtitle')
-st.markdown('Text aligned to the left')
-
+st.markdown('Breakfast Menu')
+st.markdown('Omega 3 & Blueberry Oatmeal')
+st.markdown('Kale, Spinach & Rocket Smoothie')
+st.markdown('Hard-Boiled Free-Range egg')
 
