@@ -19,16 +19,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
 
-
-r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
-r.status_code
-200
-r.headers['content-type']
-'application/json; charset=utf8'
-r.encoding
-'utf-8'
-r.text
-'{"type":"User"...'
-r.json()
-{'private_gists': 419, 'total_private_repos': 77, ...}
